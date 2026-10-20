@@ -97,19 +97,19 @@
                 <dl class="grid grid-cols-2 gap-6">
                     <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
                         <dt class="text-sm text-slate-500">対応エリア</dt>
-                        <dd class="mt-2 text-2xl font-bold text-sky-700">◯◯県全域</dd>
+                        <dd class="mt-2 text-xl font-bold text-sky-700 sm:text-2xl">◯◯県全域</dd>
                     </div>
                     <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
                         <dt class="text-sm text-slate-500">対応件数</dt>
-                        <dd class="mt-2 text-2xl font-bold text-sky-700">1,000件〜</dd>
+                        <dd class="mt-2 text-xl font-bold text-sky-700 sm:text-2xl">1,000件〜</dd>
                     </div>
                     <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
                         <dt class="text-sm text-slate-500">営業時間</dt>
-                        <dd class="mt-2 text-2xl font-bold text-sky-700">9:00-18:00</dd>
+                        <dd class="mt-2 text-xl font-bold text-sky-700 sm:text-2xl">9:00-18:00</dd>
                     </div>
                     <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
                         <dt class="text-sm text-slate-500">定休日</dt>
-                        <dd class="mt-2 text-2xl font-bold text-sky-700">日曜・祝日</dd>
+                        <dd class="mt-2 text-xl font-bold text-sky-700 sm:text-2xl">日曜・祝日</dd>
                     </div>
                 </dl>
             </div>
