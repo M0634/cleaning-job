@@ -20,15 +20,15 @@
                 </a>
 
                 <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
-                    <a href="#about" class="hover:text-sky-700">会社概要</a>
-                    <a href="#services" class="hover:text-sky-700">サービス</a>
-                    <a href="#pricing" class="hover:text-sky-700">料金</a>
-                    <a href="#contact" class="hover:text-sky-700">お問い合わせ</a>
+                    <a href="#about" class="nav-link">会社概要</a>
+                    <a href="#services" class="nav-link">サービス</a>
+                    <a href="#pricing" class="nav-link">料金</a>
+                    <a href="#contact" class="nav-link">お問い合わせ</a>
                 </nav>
 
                 <a
                     href="#contact"
-                    class="hidden rounded-md bg-sky-700 px-5 py-2 text-sm font-semibold text-white hover:bg-sky-800 md:inline-block"
+                    class="hidden rounded-md bg-sky-700 px-5 py-2 text-sm font-semibold text-white shadow-sm transition duration-200 hover:bg-sky-800 hover:shadow-md active:scale-[0.98] md:inline-block"
                 >
                     無料相談する
                 </a>
@@ -48,20 +48,23 @@
             </div>
 
             <nav id="mobile-menu" data-mobile-menu class="hidden border-t border-slate-200 px-6 py-4 md:hidden">
-                <ul class="flex flex-col gap-4 text-sm font-medium">
-                    <li><a href="#about">会社概要</a></li>
-                    <li><a href="#services">サービス</a></li>
-                    <li><a href="#pricing">料金</a></li>
-                    <li><a href="#contact" class="font-semibold text-sky-700">お問い合わせ</a></li>
+                <ul class="flex flex-col gap-1 text-sm font-medium">
+                    <li><a href="#about" class="block rounded-md px-3 py-2 transition hover:bg-sky-50 hover:text-sky-700">会社概要</a></li>
+                    <li><a href="#services" class="block rounded-md px-3 py-2 transition hover:bg-sky-50 hover:text-sky-700">サービス</a></li>
+                    <li><a href="#pricing" class="block rounded-md px-3 py-2 transition hover:bg-sky-50 hover:text-sky-700">料金</a></li>
+                    <li><a href="#contact" class="block rounded-md bg-sky-700 px-3 py-2 text-center font-semibold text-white transition hover:bg-sky-800">お問い合わせ</a></li>
                 </ul>
             </nav>
         </header>
 
         <!-- Hero -->
-        <section class="bg-gradient-to-b from-sky-50 to-white">
-            <div class="mx-auto max-w-6xl px-6 py-20 text-center sm:py-28">
-                <p class="text-sm font-semibold uppercase tracking-wider text-sky-700">Professional Cleaning Service</p>
-                <h1 class="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">
+        <section class="relative overflow-hidden bg-gradient-to-b from-sky-50 to-white">
+            <div class="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-sky-200/50 blur-3xl" aria-hidden="true"></div>
+            <div class="pointer-events-none absolute top-40 -left-24 h-72 w-72 rounded-full bg-sky-100/60 blur-3xl" aria-hidden="true"></div>
+
+            <div class="relative mx-auto max-w-6xl px-6 py-20 text-center sm:py-28">
+                <p class="section-eyebrow">Professional Cleaning Service</p>
+                <h1 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">
                     清潔な空間で、<br class="sm:hidden">毎日をもっと快適に
                 </h1>
                 <p class="mx-auto mt-6 max-w-2xl text-slate-600">
@@ -69,10 +72,10 @@
                     定期清掃からスポット清掃まで、お客様のご要望に合わせてプランをご提案します。
                 </p>
                 <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                    <a href="#contact" class="w-full rounded-md bg-sky-700 px-8 py-3 text-sm font-semibold text-white hover:bg-sky-800 sm:w-auto">
+                    <a href="#contact" class="btn-primary w-full sm:w-auto">
                         無料相談・お見積り
                     </a>
-                    <a href="#services" class="w-full rounded-md border border-slate-300 px-8 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50 sm:w-auto">
+                    <a href="#services" class="btn-secondary w-full sm:w-auto">
                         サービス内容を見る
                     </a>
                 </div>
@@ -83,27 +86,28 @@
         <section id="about" class="scroll-mt-20 mx-auto max-w-6xl px-6 py-20">
             <div class="grid gap-12 md:grid-cols-2 md:items-center">
                 <div>
-                    <p class="text-sm font-semibold uppercase tracking-wider text-sky-700">About Us</p>
-                    <h2 class="mt-2 text-2xl font-bold sm:text-3xl">会社概要</h2>
+                    <p class="section-eyebrow">About Us</p>
+                    <h2 class="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">会社概要</h2>
+                    <div class="mt-4 h-1 w-12 rounded-full bg-sky-700"></div>
                     <p class="mt-6 text-slate-600">
                         {{ config('app.name') }}は、地域のご家庭・企業様に向けた清掃サービスを提供しています。
                         お客様一人ひとりのご要望に寄り添い、安心・丁寧な作業をお約束します。
                     </p>
                 </div>
                 <dl class="grid grid-cols-2 gap-6">
-                    <div class="rounded-lg border border-slate-200 p-6 text-center">
+                    <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
                         <dt class="text-sm text-slate-500">対応エリア</dt>
                         <dd class="mt-2 text-2xl font-bold text-sky-700">◯◯県全域</dd>
                     </div>
-                    <div class="rounded-lg border border-slate-200 p-6 text-center">
+                    <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
                         <dt class="text-sm text-slate-500">対応件数</dt>
                         <dd class="mt-2 text-2xl font-bold text-sky-700">1,000件〜</dd>
                     </div>
-                    <div class="rounded-lg border border-slate-200 p-6 text-center">
+                    <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
                         <dt class="text-sm text-slate-500">営業時間</dt>
                         <dd class="mt-2 text-2xl font-bold text-sky-700">9:00-18:00</dd>
                     </div>
-                    <div class="rounded-lg border border-slate-200 p-6 text-center">
+                    <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
                         <dt class="text-sm text-slate-500">定休日</dt>
                         <dd class="mt-2 text-2xl font-bold text-sky-700">日曜・祝日</dd>
                     </div>
@@ -115,8 +119,9 @@
         <section id="services" class="scroll-mt-20 bg-slate-50 py-20">
             <div class="mx-auto max-w-6xl px-6">
                 <div class="text-center">
-                    <p class="text-sm font-semibold uppercase tracking-wider text-sky-700">Services</p>
-                    <h2 class="mt-2 text-2xl font-bold sm:text-3xl">サービス一覧</h2>
+                    <p class="section-eyebrow">Services</p>
+                    <h2 class="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">サービス一覧</h2>
+                    <div class="mx-auto mt-4 h-1 w-12 rounded-full bg-sky-700"></div>
                 </div>
 
                 <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -128,8 +133,13 @@
                         ['title' => '引っ越し前後清掃', 'desc' => '入居前・退去時の清掃で、原状回復やお部屋探しをサポートします。'],
                         ['title' => '特殊清掃', 'desc' => 'ご相談内容に応じて、専門的な清掃プランをご提案します。'],
                     ] as $service)
-                        <div class="rounded-lg bg-white p-6 shadow-sm ring-1 ring-slate-200">
-                            <h3 class="text-lg font-semibold">{{ $service['title'] }}</h3>
+                        <div class="card">
+                            <div class="icon-badge">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-lg font-semibold text-slate-900">{{ $service['title'] }}</h3>
                             <p class="mt-2 text-sm text-slate-600">{{ $service['desc'] }}</p>
                         </div>
                     @endforeach
@@ -140,8 +150,9 @@
         <!-- Pricing -->
         <section id="pricing" class="scroll-mt-20 mx-auto max-w-6xl px-6 py-20">
             <div class="text-center">
-                <p class="text-sm font-semibold uppercase tracking-wider text-sky-700">Pricing</p>
-                <h2 class="mt-2 text-2xl font-bold sm:text-3xl">料金プラン</h2>
+                <p class="section-eyebrow">Pricing</p>
+                <h2 class="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">料金プラン</h2>
+                <div class="mx-auto mt-4 h-1 w-12 rounded-full bg-sky-700"></div>
                 <p class="mt-4 text-sm text-slate-500">※ 料金は目安です。詳細はお問い合わせ・現地調査の上でお見積りいたします。</p>
             </div>
 
@@ -151,8 +162,13 @@
                     ['name' => 'スタンダードプラン', 'price' => '¥15,000〜', 'desc' => '2LDK〜3LDK向け、水回り＋居室の一般清掃', 'featured' => true],
                     ['name' => 'プレミアムプラン', 'price' => '¥25,000〜', 'desc' => '4LDK以上・店舗・オフィス向け、全体清掃'],
                 ] as $plan)
-                    <div class="rounded-lg border p-8 {{ $plan['featured'] ?? false ? 'border-sky-700 shadow-md' : 'border-slate-200' }}">
-                        <h3 class="text-lg font-semibold">{{ $plan['name'] }}</h3>
+                    <div class="relative rounded-xl border p-8 text-center transition-all duration-200 hover:-translate-y-1 {{ $plan['featured'] ?? false ? 'border-sky-700 shadow-md md:scale-105' : 'border-slate-200 shadow-sm hover:shadow-lg' }}">
+                        @if ($plan['featured'] ?? false)
+                            <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-sky-700 px-4 py-1 text-xs font-semibold text-white shadow-sm">
+                                人気プラン
+                            </span>
+                        @endif
+                        <h3 class="text-lg font-semibold text-slate-900">{{ $plan['name'] }}</h3>
                         <p class="mt-4 text-3xl font-bold text-sky-700">{{ $plan['price'] }}</p>
                         <p class="mt-4 text-sm text-slate-600">{{ $plan['desc'] }}</p>
                     </div>
@@ -164,13 +180,17 @@
         <section id="contact" class="scroll-mt-20 bg-slate-50 py-20">
             <div class="mx-auto max-w-2xl px-6">
                 <div class="text-center">
-                    <p class="text-sm font-semibold uppercase tracking-wider text-sky-700">Contact</p>
-                    <h2 class="mt-2 text-2xl font-bold sm:text-3xl">お問い合わせ</h2>
+                    <p class="section-eyebrow">Contact</p>
+                    <h2 class="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">お問い合わせ</h2>
+                    <div class="mx-auto mt-4 h-1 w-12 rounded-full bg-sky-700"></div>
                     <p class="mt-4 text-sm text-slate-600">無料相談・お見積りのご依頼は、以下のフォームからお気軽にどうぞ。</p>
                 </div>
 
                 @if (session('contact_success'))
-                    <div class="mt-8 rounded-md bg-green-50 p-4 text-sm text-green-700 ring-1 ring-green-200">
+                    <div class="mt-8 flex items-center gap-2 rounded-md bg-green-50 p-4 text-sm text-green-700 ring-1 ring-green-200">
+                        <svg class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
                         お問い合わせありがとうございます。担当者よりご連絡いたします。
                     </div>
                 @endif
@@ -179,10 +199,10 @@
                     @csrf
 
                     <div>
-                        <label for="name" class="block text-sm font-medium">お名前 <span class="text-red-600">*</span></label>
+                        <label for="name" class="block text-sm font-medium text-slate-700">お名前 <span class="text-red-600">*</span></label>
                         <input
                             type="text" id="name" name="name" value="{{ old('name') }}"
-                            class="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
+                            class="input-field"
                         >
                         @error('name')
                             <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -190,10 +210,10 @@
                     </div>
 
                     <div>
-                        <label for="email" class="block text-sm font-medium">メールアドレス <span class="text-red-600">*</span></label>
+                        <label for="email" class="block text-sm font-medium text-slate-700">メールアドレス <span class="text-red-600">*</span></label>
                         <input
                             type="email" id="email" name="email" value="{{ old('email') }}"
-                            class="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
+                            class="input-field"
                         >
                         @error('email')
                             <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -201,10 +221,10 @@
                     </div>
 
                     <div>
-                        <label for="phone" class="block text-sm font-medium">電話番号</label>
+                        <label for="phone" class="block text-sm font-medium text-slate-700">電話番号</label>
                         <input
                             type="text" id="phone" name="phone" value="{{ old('phone') }}"
-                            class="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
+                            class="input-field"
                         >
                         @error('phone')
                             <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
@@ -212,17 +232,17 @@
                     </div>
 
                     <div>
-                        <label for="message" class="block text-sm font-medium">お問い合わせ内容 <span class="text-red-600">*</span></label>
+                        <label for="message" class="block text-sm font-medium text-slate-700">お問い合わせ内容 <span class="text-red-600">*</span></label>
                         <textarea
                             id="message" name="message" rows="5"
-                            class="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 text-sm focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500"
+                            class="input-field"
                         >{{ old('message') }}</textarea>
                         @error('message')
                             <p class="mt-1 text-sm text-red-600">{{ $message }}</p>
                         @enderror
                     </div>
 
-                    <button type="submit" class="w-full rounded-md bg-sky-700 px-6 py-3 text-sm font-semibold text-white hover:bg-sky-800">
+                    <button type="submit" class="btn-primary w-full">
                         送信する
                     </button>
                 </form>
