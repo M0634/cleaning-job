@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ config('app.name') }} | 清掃サービス</title>
-        <meta name="description" content="オフィス・店舗・ご自宅の清掃を承ります。定期清掃からハウスクリーニングまで、お気軽にお問い合わせください。">
+        <title>{{ config('app.name') }} | 窓まわりのお掃除サービス</title>
+        <meta name="description" content="窓ふき・窓際サッシのカビ取り・エアコンクリーニングなど、ご自宅の気になる箇所を個人でお伺いするお掃除サービスです。お気軽にお問い合わせください。">
 
         @fonts
 
@@ -20,7 +20,7 @@
                 </a>
 
                 <nav class="hidden items-center gap-8 text-sm font-medium md:flex">
-                    <a href="#about" class="nav-link">会社概要</a>
+                    <a href="#about" class="nav-link">ご紹介</a>
                     <a href="#services" class="nav-link">サービス</a>
                     <a href="#pricing" class="nav-link">料金</a>
                     <a href="#contact" class="nav-link">お問い合わせ</a>
@@ -49,7 +49,7 @@
 
             <nav id="mobile-menu" data-mobile-menu class="hidden border-t border-slate-200 px-6 py-4 md:hidden">
                 <ul class="flex flex-col gap-1 text-sm font-medium">
-                    <li><a href="#about" class="block rounded-md px-3 py-2 transition hover:bg-sky-50 hover:text-sky-700">会社概要</a></li>
+                    <li><a href="#about" class="block rounded-md px-3 py-2 transition hover:bg-sky-50 hover:text-sky-700">ご紹介</a></li>
                     <li><a href="#services" class="block rounded-md px-3 py-2 transition hover:bg-sky-50 hover:text-sky-700">サービス</a></li>
                     <li><a href="#pricing" class="block rounded-md px-3 py-2 transition hover:bg-sky-50 hover:text-sky-700">料金</a></li>
                     <li><a href="#contact" class="block rounded-md bg-sky-700 px-3 py-2 text-center font-semibold text-white transition hover:bg-sky-800">お問い合わせ</a></li>
@@ -63,13 +63,13 @@
             <div class="pointer-events-none absolute top-40 -left-24 h-72 w-72 rounded-full bg-sky-100/60 blur-3xl" aria-hidden="true"></div>
 
             <div class="relative mx-auto max-w-6xl px-6 py-20 text-center sm:py-28">
-                <p class="section-eyebrow">Professional Cleaning Service</p>
+                <p class="section-eyebrow">Window &amp; Home Cleaning</p>
                 <h1 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">
-                    清潔な空間で、<br class="sm:hidden">毎日をもっと快適に
+                    窓まわりの気になる汚れ、<br class="sm:hidden">ひとつずつ綺麗に
                 </h1>
                 <p class="mx-auto mt-6 max-w-2xl text-slate-600">
-                    オフィス・店舗・ご自宅の清掃を、経験豊富なスタッフが丁寧に対応します。
-                    定期清掃からスポット清掃まで、お客様のご要望に合わせてプランをご提案します。
+                    窓ふき・窓際サッシのカビ取り・エアコンクリーニングなど、
+                    個人でお伺いできる範囲のお掃除を一つひとつ丁寧に対応します。
                 </p>
                 <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                     <a href="#contact" class="btn-primary w-full sm:w-auto">
@@ -86,30 +86,31 @@
         <section id="about" class="scroll-mt-20 mx-auto max-w-6xl px-6 py-20">
             <div class="grid gap-12 md:grid-cols-2 md:items-center">
                 <div>
-                    <p class="section-eyebrow">About Us</p>
-                    <h2 class="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">会社概要</h2>
+                    <p class="section-eyebrow">About</p>
+                    <h2 class="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">このサービスについて</h2>
                     <div class="mt-4 h-1 w-12 rounded-full bg-sky-700"></div>
                     <p class="mt-6 text-slate-600">
-                        {{ config('app.name') }}は、地域のご家庭・企業様に向けた清掃サービスを提供しています。
-                        お客様一人ひとりのご要望に寄り添い、安心・丁寧な作業をお約束します。
+                        {{ config('app.name') }}は、個人でお伺いしているお掃除サービスです。
+                        窓ふきや窓際のカビ取り、エアコンクリーニングなど、対応できる範囲の作業を
+                        一つひとつ丁寧に行います。無理のない範囲で、まずはお気軽にご相談ください。
                     </p>
                 </div>
                 <dl class="grid grid-cols-2 gap-6">
                     <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
                         <dt class="text-sm text-slate-500">対応エリア</dt>
-                        <dd class="mt-2 text-xl font-bold text-sky-700 sm:text-2xl">◯◯県全域</dd>
+                        <dd class="mt-2 text-xl font-bold text-sky-700 sm:text-2xl">◯◯市周辺</dd>
                     </div>
                     <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
-                        <dt class="text-sm text-slate-500">対応件数</dt>
-                        <dd class="mt-2 text-xl font-bold text-sky-700 sm:text-2xl">1,000件〜</dd>
+                        <dt class="text-sm text-slate-500">対応内容</dt>
+                        <dd class="mt-2 text-xl font-bold text-sky-700 sm:text-2xl">窓まわり中心</dd>
                     </div>
                     <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
-                        <dt class="text-sm text-slate-500">営業時間</dt>
+                        <dt class="text-sm text-slate-500">活動時間</dt>
                         <dd class="mt-2 text-xl font-bold text-sky-700 sm:text-2xl">9:00-18:00</dd>
                     </div>
                     <div class="rounded-lg border border-slate-200 p-6 text-center transition duration-200 hover:border-sky-300 hover:shadow-sm">
-                        <dt class="text-sm text-slate-500">定休日</dt>
-                        <dd class="mt-2 text-xl font-bold text-sky-700 sm:text-2xl">日曜・祝日</dd>
+                        <dt class="text-sm text-slate-500">ご相談</dt>
+                        <dd class="mt-2 text-xl font-bold text-sky-700 sm:text-2xl">無料</dd>
                     </div>
                 </dl>
             </div>
@@ -122,16 +123,16 @@
                     <p class="section-eyebrow">Services</p>
                     <h2 class="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">サービス一覧</h2>
                     <div class="mx-auto mt-4 h-1 w-12 rounded-full bg-sky-700"></div>
+                    <p class="mx-auto mt-4 max-w-xl text-sm text-slate-500">
+                        現在は以下の内容を中心に対応しています。対応可否はご相談時にお気軽にご確認ください。
+                    </p>
                 </div>
 
                 <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     @foreach ([
-                        ['title' => '定期清掃', 'desc' => '週次・月次など、定期的な清掃プランでいつも清潔な空間を保ちます。'],
-                        ['title' => 'ハウスクリーニング', 'desc' => 'キッチン・浴室・水回りなど、ご自宅の気になる箇所を徹底洗浄します。'],
-                        ['title' => 'オフィス・店舗清掃', 'desc' => '営業時間外の対応も可能。従業員様・お客様が気持ちよく過ごせる空間づくりをサポートします。'],
-                        ['title' => 'エアコンクリーニング', 'desc' => '分解洗浄でカビ・ホコリを除去し、空気環境を改善します。'],
-                        ['title' => '引っ越し前後清掃', 'desc' => '入居前・退去時の清掃で、原状回復やお部屋探しをサポートします。'],
-                        ['title' => '特殊清掃', 'desc' => 'ご相談内容に応じて、専門的な清掃プランをご提案します。'],
+                        ['title' => '窓ふき', 'desc' => '窓ガラスやサッシの拭き掃除で、お部屋の印象をぱっと明るくします。'],
+                        ['title' => '窓際・サッシのカビ取り', 'desc' => '窓枠やゴムパッキンに付いた気になる黒カビをていねいに除去します。'],
+                        ['title' => 'エアコンクリーニング', 'desc' => 'フィルターや吹き出し口のホコリ・汚れをすっきりお掃除します。'],
                     ] as $service)
                         <div class="card">
                             <div class="icon-badge">
@@ -151,23 +152,18 @@
         <section id="pricing" class="scroll-mt-20 mx-auto max-w-6xl px-6 py-20">
             <div class="text-center">
                 <p class="section-eyebrow">Pricing</p>
-                <h2 class="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">料金プラン</h2>
+                <h2 class="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">料金の目安</h2>
                 <div class="mx-auto mt-4 h-1 w-12 rounded-full bg-sky-700"></div>
-                <p class="mt-4 text-sm text-slate-500">※ 料金は目安です。詳細はお問い合わせ・現地調査の上でお見積りいたします。</p>
+                <p class="mt-4 text-sm text-slate-500">※ 料金は目安です。お部屋の状況により変動するため、詳細はご相談の上でお見積りいたします。</p>
             </div>
 
             <div class="mt-12 grid gap-6 md:grid-cols-3">
                 @foreach ([
-                    ['name' => 'ライトプラン', 'price' => '¥8,000〜', 'desc' => '1R〜1LDK向け、水回り中心のスポット清掃'],
-                    ['name' => 'スタンダードプラン', 'price' => '¥15,000〜', 'desc' => '2LDK〜3LDK向け、水回り＋居室の一般清掃', 'featured' => true],
-                    ['name' => 'プレミアムプラン', 'price' => '¥25,000〜', 'desc' => '4LDK以上・店舗・オフィス向け、全体清掃'],
+                    ['name' => '窓ふき', 'price' => '¥3,000〜', 'desc' => '窓5枚程度まで。それ以上は枚数に応じてご相談ください。'],
+                    ['name' => '窓際・サッシのカビ取り', 'price' => '¥4,000〜', 'desc' => '窓1〜2箇所の窓枠・パッキンのカビ取り。'],
+                    ['name' => 'エアコンクリーニング', 'price' => '¥6,000〜', 'desc' => '1台あたり、フィルター・吹き出し口の清掃。'],
                 ] as $plan)
-                    <div class="relative rounded-xl border p-8 text-center transition-all duration-200 hover:-translate-y-1 {{ $plan['featured'] ?? false ? 'border-sky-700 shadow-md md:scale-105' : 'border-slate-200 shadow-sm hover:shadow-lg' }}">
-                        @if ($plan['featured'] ?? false)
-                            <span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-sky-700 px-4 py-1 text-xs font-semibold text-white shadow-sm">
-                                人気プラン
-                            </span>
-                        @endif
+                    <div class="rounded-xl border border-slate-200 p-8 text-center shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg">
                         <h3 class="text-lg font-semibold text-slate-900">{{ $plan['name'] }}</h3>
                         <p class="mt-4 text-3xl font-bold text-sky-700">{{ $plan['price'] }}</p>
                         <p class="mt-4 text-sm text-slate-600">{{ $plan['desc'] }}</p>
@@ -188,7 +184,7 @@
 
                 @if (session('contact_success'))
                     <div class="mt-8 flex items-center gap-2 rounded-md bg-green-50 p-4 text-sm text-green-700 ring-1 ring-green-200">
-                        <svg class="h-5 w-5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <svg class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
                         お問い合わせありがとうございます。担当者よりご連絡いたします。
